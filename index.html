@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js example</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+
+            overflow: hidden;
+        }
+
+        #tool-bar {
+            height: 50px;
+            width: 100vw;
+            display: flex;
+
+            background: #eee;
+            align-items: center;
+
+            padding: 0 50px;
+        }
+
+        .button {
+            height: 36px;
+            padding: 3px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            background: #888;
+            line-height: 36px;
+            color: #eeeeee;
+
+            transition: all .3s;
+        }
+
+        .button:hover {
+            background: #555;
+        }
+    </style>
+<!--    <script src="p5/p5.min.js"></script>-->
+<!--    <script src="p5/p5.sound.min.js"></script>-->
+    <script src="sketch.js" type="module"></script>
+</head>
+<body>
+
+<header id="tool-bar">
+    <div class="button" onclick="onStart();">Start</div>
+    <div class="button" onclick="onStop();">Stop</div>
+</header>
+
+</body>
+</html>
